@@ -14,7 +14,7 @@ URL: <input type="text" name="url">
 </html></body>
 `
 
-var store = NewURLStore()
+var store = NewURLStore("store.gob")
 
 func main() {
 	http.HandleFunc("/", Redirect)
